@@ -11,3 +11,45 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+input,
+button,
+textarea {
+  margin: 3px;
+}
+
+textarea {
+  padding: 3px;
+}
+
+#loginInput,
+#setupForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#loginBody,
+#setupBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#setupBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#setupColour,
+#saveColour {
+  height: 50px;
+  width: 50px;
+  background-color: rgb(187, 187, 187);
+  padding: 5px;
+}
+
+#colourButtons {
+  display: flex;
+}

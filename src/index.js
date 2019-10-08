@@ -1,12 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App.js";
+import * as firebase from "firebase/app";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+var firebaseConfig = {
+  apiKey: "AIzaSyBOcXfu1Y6TTSFlMMuJf66Wa2CgLJVajVA",
+  authDomain: "myprofilemaker.firebaseapp.com",
+  databaseURL: "https://myprofilemaker.firebaseio.com",
+  projectId: "myprofilemaker",
+  storageBucket: "",
+  messagingSenderId: "508332448658",
+  appId: "1:508332448658:web:b040d04bcb434b536aff4b",
+  measurementId: "G-Z4LWZY0P9V"
+};
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+firebase.initializeApp(firebaseConfig);
+
+ReactDOM.render(<App />, document.getElementById("root"));
